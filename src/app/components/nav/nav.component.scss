@@ -1,0 +1,34 @@
+@import '../../theme/variables.scss';
+nav{
+    position: sticky;
+    top: 0;
+    background-color: $primary-color;
+    font-size: $tamanho;
+    width: $w-nav;
+    height: $h-nav;
+    div{
+        margin-left: $ul-margin;
+    }
+    ul {
+        list-style: none;
+        li{
+            margin-right: $ul-margin;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+    nav{
+        ul{
+            display:none;
+        }
+    }
+}
+
+@media screen and (min-width: 769px){
+    .img-bnt{
+        display: none;
+    }
+}
