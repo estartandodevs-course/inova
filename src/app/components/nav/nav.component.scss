@@ -1,4 +1,7 @@
+@import '../../../styles.scss';
 @import '../../theme/variables.scss';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
 nav{
     position: sticky;
     top: 0;
@@ -8,11 +11,38 @@ nav{
     height: $h-nav;
     div{
         margin-left: $ul-margin;
+        img{
+            width: 100px;
+        }
     }
     ul {
         list-style: none;
+        width: auto;
+        height: 100%;
+        margin-bottom: 0;
+        
+        .active { 
+            background-color:  darken($primary-color, 20%);                
+        }
+        
         li{
-            margin-right: $ul-margin;
+            height: $w-nav;
+            transition: .2s;
+            &:hover { 
+                background-color:  darken($primary-color, 10%);
+                // background-color: $color-hover;
+                
+            }
+
+            a{
+                text-transform: uppercase;
+                margin-right: $ul-margin;
+                margin-left: $ul-margin;
+                text-decoration: none;
+                &:hover{
+                    color: inherit;
+                }
+            }
         }
     }
 }
@@ -24,6 +54,9 @@ nav{
         ul{
             display:none;
         }
+    }
+    .img-bnt{
+        margin-right: $pattern-margin;
     }
 }
 

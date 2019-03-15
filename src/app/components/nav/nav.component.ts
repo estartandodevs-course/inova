@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { menu } from '../../theme/lang-pt';
+
 
 @Component({
   selector: 'app-nav',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
+  public Lang = menu;
+
   constructor() { }
 
   ngOnInit() {
+    
   }
+
+  isHome(route){
+    if(route.toLowerCase() == "home"){
+      return "Estou na home"
+    }
+    return route
+  }
+
+
 
 }

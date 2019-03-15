@@ -5,7 +5,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
 
 const routes: Routes = [
-  { path: 'home', component: MainPageComponent },
+  { path: '', component: MainPageComponent },
+  { path: 'home', redirectTo: '' },
   { path: 'header', component: HeaderComponent },
   { path: 'nav', component: NavComponent },
   
