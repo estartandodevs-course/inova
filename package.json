@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --base-href /dist/inova/ --prod",
+    "build": "ng build --base-href /inova/dist/inova/ --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
