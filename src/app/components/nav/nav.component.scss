@@ -1,6 +1,6 @@
 @import '../../../styles.scss';
 @import '../../theme/variables.scss';
-@import '~bootstrap/dist/css/bootstrap.min.css';
+// @import '~bootstrap/dist/css/bootstrap.min.css';
 
 nav{
     position: sticky;
@@ -54,14 +54,46 @@ nav{
         ul{
             display:none;
         }
+        .img-bnt{
+            margin-right: $pattern-margin;
+            img{
+                width: 30px;
+            }
+        }
     }
-    .img-bnt{
-        margin-right: $pattern-margin;
+
+    .nav_container_mobile{        
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        // top: 0;  
+        right: 0;
+        height: 0;
+        background-color: rgba(6, 6, 8, 1);
+        overflow-x: hidden;
+        transition: 0.5s;
+        ul{
+            list-style: none;
+            width: 100%;
+            li{
+                color: white;
+                padding: $pattern-margin;
+                width: 100%;
+                height: 100%;
+                &:hover{
+                    background-color: lighten(rgba(6, 6, 8, 1), 10%);
+                }
+            }
+        }
     }
+
 }
 
 @media screen and (min-width: 769px){
     .img-bnt{
         display: none;
+    }
+    .nav_container_mobile{
+        display:none;
     }
 }

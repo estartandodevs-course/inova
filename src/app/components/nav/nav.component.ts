@@ -19,10 +19,21 @@ export class NavComponent implements OnInit {
 
   isHome(route){
     if(route.toLowerCase() == "home"){
-      return "Estou na home"
+      return ""
     }
     return route
   }
+
+  public openMenu() {
+    // document.getElementById("go").style.width = "50%";
+    document.getElementById("go").style.height = "auto";
+  }
+
+  public closeMenu() {
+      // document.getElementById("go").style.width = "50%";
+      document.getElementById("go").style.height = "0";
+
+  }   
 
 
 

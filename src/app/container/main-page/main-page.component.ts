@@ -12,4 +12,10 @@ export class MainPageComponent implements OnInit {
   ngOnInit() {
   }
 
+  public closeMenu() {
+    // document.getElementById("go").style.width = "50%";
+    document.getElementById("go").style.height = "0";
+
+}  
+
 }
