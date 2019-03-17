@@ -25,16 +25,12 @@ export class NavComponent implements OnInit {
   }
 
   public openMenu() {
-    // document.getElementById("go").style.width = "50%";
-    document.getElementById("go").style.height = "auto";
+    let menu = document.getElementById("go").style.height;
+    if(menu == "0px" || menu == ""){
+    document.getElementById("go").style.height = "165px";
+    }else{
+      document.getElementById("go").style.height = "0px";      
+    }
   }
-
-  public closeMenu() {
-      // document.getElementById("go").style.width = "50%";
-      document.getElementById("go").style.height = "0";
-
-  }   
-
-
-
+  
 }
