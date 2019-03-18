@@ -1,33 +1,8 @@
-$primary-color: rgba(#44434381, $alpha: 1.0);
-$tamanho: 12px;
+$primary-color: rgba(#ac0000, $alpha: 1.0);
+$color-hover:  rgb(153,153,153);
+$tamanho: 18px;
 $w-nav: 100%;
 $h-nav: 60px;
 $ul-margin: 15px;
 $pattern-padding: 15px;
-
-
-
-.es-flex-row{
-    display:flex;
-    flex-direction: row;
-}
-.es-j-between{
-    justify-content: space-between;
-}
-.es-j-around{
-    justify-content: space-around;
-}
-.es-j-center{
-    justify-content: center;
-}
-.es-ai-center{
-    align-items: center;
-}
-
-
-.es-flex-column{
-    display: flex;
-    flex-direction: column;
-}
-
-
+$pattern-margin: 15px;

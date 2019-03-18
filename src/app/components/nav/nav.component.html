@@ -1,0 +1,23 @@
+<nav class="es-flex-row es-j-between es-ai-center">
+  <div routerLink="">
+    <a>
+      <img src="../../../assets/img/logo.png" alt="">
+    </a>  
+  </div>  
+  <ul class="es-flex-row list">
+    <li class="es-flex-row es-ai-center" routerLink="/nav" routerLinkActive="active" ><a>{{isHome(Lang.ABOUT)}}</a></li>
+    <li class="es-flex-row es-ai-center" routerLink="/header" routerLinkActive="active"><a>{{Lang.SPECIALITIES}}</a></li>
+    <li class="es-flex-row es-ai-center" ><a>{{Lang.CONTACT}}</a></li>
+  </ul>
+  <div class="img-bnt" (click)="openMenu()">
+    <img  src="assets/img/menu.svg">
+  </div>
+</nav>
+<div class="nav_container_mobile es-flex-column es-j-center" id="go">
+    <ul class="es-flex-column es-j-between " >
+        <li routerLink="/nav"  (click)="openMenu()">{{Lang.ABOUT}}</li>
+        <li routerLink="/home" (click)="openMenu()">{{Lang.SPECIALITIES}}</li>
+        <li>{{Lang.CONTACT}}</li>
+    </ul>            
+</div>
+

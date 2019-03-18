@@ -12,4 +12,11 @@ export class MainPageComponent implements OnInit {
   ngOnInit() {
   }
 
+  public closeMenu() {
+    var i = document.getElementById("main");
+    document.getElementById("go").style.height = "0";
+    i.classList.remove("tofade");
+    i.classList.add("tofadeoff");
+  }  
+
 }

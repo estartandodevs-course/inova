@@ -2,5 +2,39 @@
 *{
     margin: 0;
     padding: 0;
-    color: #fff;
+}
+
+.es-flex-row{
+    display:flex;
+    flex-direction: row;
+}
+.es-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.es-j-between{
+    justify-content: space-between;
+}
+.es-j-around{
+    justify-content: space-around;
+}
+.es-j-center{
+    justify-content: center;
+}
+.es-ai-center{
+    align-items: center;
+}
+.es-j.start{
+    justify-content: flex-start;
+}
+
+.tofade{
+    opacity: .3;
+    transition: opacity .4s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.555);
+    transition: .5s;
+}
+.tofadeoff{
+    opacity: 1;
+    transition: opacity .4s ease-in-out;    
 }
