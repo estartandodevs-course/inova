@@ -8,6 +8,10 @@
     display:flex;
     flex-direction: row;
 }
+.es-flex-column{
+    display: flex;
+    flex-direction: column;
+}
 .es-j-between{
     justify-content: space-between;
 }
@@ -24,8 +28,13 @@
     justify-content: flex-start;
 }
 
-
-.es-flex-column{
-    display: flex;
-    flex-direction: column;
+.tofade{
+    opacity: .3;
+    transition: opacity .4s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.555);
+    transition: .5s;
+}
+.tofadeoff{
+    opacity: 1;
+    transition: opacity .4s ease-in-out;    
 }

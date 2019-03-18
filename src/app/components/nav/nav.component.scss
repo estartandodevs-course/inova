@@ -51,6 +51,7 @@ nav{
 
 @media screen and (max-width: 768px){
     nav{
+        z-index: 1;
         ul{
             display:none;
         }
@@ -67,19 +68,17 @@ nav{
         position: fixed;
         z-index: 1;
         // top: 0;  
-        right: 0;
+        // right: 0;
         height: 0;
         background-color: rgba(6, 6, 8, 1);
         overflow-x: hidden;
-        transition: 0.5s;
+        transition: 0.3s;
         ul{
             list-style: none;
-            width: 100%;
             li{
                 color: white;
                 padding: $pattern-margin;
-                width: 100%;
-                height: 100%;
+                
                 &:hover{
                     background-color: lighten(rgba(6, 6, 8, 1), 10%);
                 }
