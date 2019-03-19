@@ -5,7 +5,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 img{
     display: flex;
     width: 36px;
@@ -13,6 +13,7 @@ img{
     margin: 10px 0px 10px 10px;
 }
 ul,li,a{
+    display: flex;
     list-style: none;
 }
 .devs{
@@ -28,8 +29,13 @@ ul,li,a{
     width: 20%;
 }
 }
-@media(min-width:700px){
+@media(max-width:768px){
     footer{
         display: flex;
+        flex-direction: column;
+
+        .logo , .icones{
+            width: unset;
+        }
     }
 }
