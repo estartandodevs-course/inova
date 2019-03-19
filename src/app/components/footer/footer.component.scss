@@ -1,20 +1,35 @@
 @import '../../theme/variables.scss';
 
-.footer{
+footer{
     background-color: $primary-color;
     display: flex;
-}
-.redesSociais{
-  display: flex;
-}
+    justify-content: space-between;
+    align-items: center;
+    
 img{
     display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    width: 40px;
-    padding: 10px 1px 5px 10px;
+    width: 36px;
+    height: 35px;
+    margin: 10px 0px 10px 10px;
+}
+ul,li,a{
+    list-style: none;
 }
 .devs{
-    width: 50px;
-    height: 50px;
+    width: 176px;
+    height: 80px;
+}
+.logo,.icones{
+    display: flex;
+    width: 33%;
+}
+.space{
+    display: flex;
+    width: 20%;
+}
+}
+@media(min-width:700px){
+    footer{
+        display: flex;
+    }
 }
