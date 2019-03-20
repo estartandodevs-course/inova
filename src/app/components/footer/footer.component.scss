@@ -1,41 +1,84 @@
 @import '../../theme/variables.scss';
 
-footer{
-    background-color: $primary-color;
+footer {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .secfooter{
     display: flex;
     justify-content: space-between;
+    width: 100%;
     align-items: center;
-
-img{
+  }
+  img {
     display: flex;
     width: 36px;
     height: 35px;
     margin: 10px 0px 10px 10px;
-}
-ul,li,a{
+  }
+
+  ul,
+  a {
     display: flex;
     list-style: none;
-}
-.devs{
+    flex-direction: column;
+    margin: 0px 5px 0px 0px;
+  }
+  .social{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    margin: 0px 5px 0px 0px;
+  }
+  .pinfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
+  .info{
+    padding-left: 10px;
+    color: white;
+  }
+
+  .inova{
     width: 176px;
     height: 80px;
-}
-.logo,.icones{
+  }
+  .contact{
     display: flex;
     width: 33%;
-}
-.space{
+  }
+  .logo{
     display: flex;
-    width: 20%;
-}
-}
-@media(max-width:768px){
-    footer{
-        display: flex;
-        flex-direction: column;
+    width: 33%;
+  }
+  .icons{
+    display: flex;
+    width: 15%;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+  .face, .insta{
+    margin-bottom: 30px;
+  }
 
-        .logo , .icones{
-            width: unset;
-        }
+  .space {
+    display: flex;
+
+  }
+}
+
+@media(max-width:768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+
+    .logo,
+    .icones {
+      width: unset;
     }
+  }
 }
