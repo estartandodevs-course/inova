@@ -3,16 +3,19 @@
 // @import '~bootstrap/dist/css/bootstrap.min.css';
 
 nav{
-    position: sticky;
+    position: fixed;
     top: 0;
     // background-color: $primary-color;
     font-size: $tamanho;
     width: $w-nav;
-    height: $h-nav;
+    // height: $h-nav;
     div{
-        margin-left: $ul-margin;
+        // margin-left: $ul-margin;
         img{
-            width: 100px;
+            width: 154px;
+            height: 80px;
+            margin-left: 24px;
+            margin-top: 14px 
         }
     }
     ul {
