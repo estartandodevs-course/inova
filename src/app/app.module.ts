@@ -10,6 +10,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { NavComponent } from './components/nav/nav.component';
 import { InputComponent } from './components/input/input.component';
 import { TextareaComponent } from './components/textarea/textarea.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TextareaComponent } from './components/textarea/textarea.component';
     CarouselComponent,
     NavComponent,
     InputComponent,
-    TextareaComponent
+    TextareaComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
