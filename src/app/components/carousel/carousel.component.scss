@@ -1,0 +1,17 @@
+@import '../../../styles.scss';
+@import '../../theme/variables.scss';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+div{
+    height: 100vh !important;
+}
+p{
+    font-family: 'Comfortaa', cursive;
+    font-size: 64px
+}
+@media screen and(max-width: 768px){
+    p{
+        font-family: 'Comfortaa', cursive;
+        font-size: 34px
+    }
+}
