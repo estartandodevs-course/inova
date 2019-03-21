@@ -25,18 +25,11 @@ export class NavComponent implements OnInit {
   }
 
   public openMenu() {
-    let menu = document.getElementById("go").style.height;
-    var i = document.getElementById("main");
-
+    let menu = document.getElementById("go").style.width;
     if(menu == "0px" || menu == ""){
-    document.getElementById("go").style.height = "150px";
-    i.classList.add("tofade");
-    i.classList.remove("tofadeoff");      
-
+      document.getElementById("go").style.width = "100%";
     }else{
-      document.getElementById("go").style.height = "0px";
-      i.classList.remove("tofade");
-      i.classList.add("tofadeoff");      
+      document.getElementById("go").style.width = "0px";      
     }
   }
   

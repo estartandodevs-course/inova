@@ -13,11 +13,21 @@
     <img  src="assets/img/menu.svg">
   </div>
 </nav>
-<div class="nav_container_mobile es-flex-column es-j-center" id="go">
-    <ul class="es-flex-column es-j-between " >
+<div class="nav_container_mobile es-flex-column" id="go">
+    <header class="es-flex-row es-j-between es-ai-center">
+      <a (click)="openMenu()" routerLink=""><img src="../../../assets/img/logo.png" alt=""></a>
+      <a (click)="openMenu()" id="exit">X</a>
+    </header>
+    <div class="es-flex-column es-j-between">
+      <ul class="es-flex-column " >
         <li routerLink="/nav"  (click)="openMenu()">{{Lang.ABOUT}}</li>
         <li routerLink="/home" (click)="openMenu()">{{Lang.SPECIALITIES}}</li>
         <li>{{Lang.CONTACT}}</li>
-    </ul>            
+      </ul>
+      <div class="es-flex-row es-j-around es-ai-end">
+        <a href=""><img src="../../../assets/img/Facebookicon.png" alt=""></a>
+        <a href=""><img src="../../../assets/img/instagram-icon.png"></a>
+      </div>      
+    </div>
 </div>
 
