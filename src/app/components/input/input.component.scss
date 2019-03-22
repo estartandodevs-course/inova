@@ -1,12 +1,11 @@
-
-.form-group {
-display: flex;
-justify-content: center;
-}
-
 input {
     background-color: transparent;
-    border-radius: 4px;
-    width:50vh;
-    height:30px;
+    border-radius: 5px;
+    width:317px;
+    height:46px;
+    border: 1px solid;
+    border-color: white;
+}
+::placeholder {
+    color: white;
 }

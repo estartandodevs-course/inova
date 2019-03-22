@@ -9,6 +9,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { NavComponent } from './components/nav/nav.component';
 import { InputComponent } from './components/input/input.component';
+import { TextareaComponent } from './components/textarea/textarea.component';
+import { ButtonComponent } from './components/button/button.component';
+import { SectionContactComponent } from './components/section-contact/section-contact.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { InputComponent } from './components/input/input.component';
     FooterComponent,
     CarouselComponent,
     NavComponent,
-    InputComponent
+    InputComponent,
+    TextareaComponent,
+    ButtonComponent,
+    SectionContactComponent
   ],
   imports: [
     BrowserModule,
