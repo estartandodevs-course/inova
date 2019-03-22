@@ -1,0 +1,53 @@
+main{
+    background-color: #ffffff;
+    min-height: 100vh;
+    h2{
+        color: #BF0202;
+    }
+    .group-card-1{
+        // background-color: aqua;
+        padding: 0px 47px 0px 47px;
+        flex-wrap: wrap-reverse;
+    
+        div{    
+            // classe card
+            background-color: #F6F6F6;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            width: 150px;
+            height: 201px; 
+            border: none; 
+            margin: 0px 47px 0px 47px;
+            // margin: 10px;
+            img{
+                
+            }
+            p{
+        
+            }
+            
+        }
+    }
+    .group-card-2{
+        padding: 0px 47px 0px 47px;
+        flex-wrap: wrap;
+    
+        div{    
+            // classe card
+            background-color: #F6F6F6;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            width: 158px;
+            height: 201px; 
+            border: none; 
+            margin: 0px 47px 0px 47px;
+            // margin: 10px;
+            img{
+                
+            }
+            p{
+        
+            }
+            
+        }
+    }
+}
+   
