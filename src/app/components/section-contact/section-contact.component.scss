@@ -1,8 +1,6 @@
 section{
     height: 100vh;
     background-image: url("../../../assets/img/backgroundform.png");
-    // background-attachment: fixed;
-    // background-position-x: 50%;
     background-position-y: 50%;
     background-size: cover;
     form{
@@ -14,6 +12,11 @@ section{
     }
 }
 
+iframe {
+  height: 282px;
+  width: 408px;
+  margin: 30px;
+}
 @media screen and(max-width:768px){
     section{
         form{
@@ -25,3 +28,5 @@ section{
         }
     }
 }
+
+
