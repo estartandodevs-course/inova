@@ -1,136 +1,43 @@
 @import '../../theme/variables.scss';
 
-footer {
+.footer {
   background-color: $primary-color;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  .secfooter {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-  }
-
   img {
-    display: flex;
-    width: 36px;
-    height: 35px;
-    margin: 10px 0px 10px 10px;
+    width: 45px;
+    ;
   }
 
-  li {
-    list-style: none;
-  }
+  .contact {
+    padding: 15px;
+    color: white;
 
-  ul,
-  a {
-    display: flex;
-    list-style: none;
-    flex-direction: column;
-    margin: 0px 5px 0px 0px;
+    p{
+      margin-left: 10px;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+  }
+  
+  .inova{
+    width: 130px;
   }
 
   .social {
     display: flex;
-    list-style: none;
-    flex-direction: column;
-    margin: 0px 5px 0px 0px;
-  }
-
-  .pinfo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-  }
-
-  .info {
-    padding-left: 10px;
-    color: white;
-  }
-
-  .inova {
-    width: 176px;
-    height: 80px;
-  }
-
-  .contact {
-    display: flex;
-    width: 33%;
-  }
-
-  .logo {
-    display: flex;
-    width: 33%;
-  }
-
-  .icons {
-    display: flex;
-    width: 15%;
-    justify-content: flex-end;
-    margin-right: 10px;
-  }
-
-  .face,
-  .insta {
-    margin-bottom: 30px;
-  }
-
-  .space {
-    display: flex;
-
-  }
-}
-
-@media(max-width:768px) {
-  footer {
-    display: flex;
     flex-direction: column;
 
-    .secfooter {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      align-items: center;
-      flex-direction: column-reverse;
-      padding-top: 25px;
+    a:nth-child(1){
+      margin:0 15px 15px 0;
     }
 
-    .icons {
-      display: flex;
-      width: 100%;
-      justify-content: space-around;
-      margin: 0px;
-    }
-
-    .logo,
-    .contact {
-      width: auto;
-    }
-    .contact{
-      padding-top: 20px;
-      padding-bottom: 30px;
-    }
-
-    a {
-      display: flex;
-      list-style: none;
-      flex-direction: column;
-      margin: 0px 0px 0px 0px;
-    }
-
-    img {
-      display: flex;
-      width: 36px;
-      height: 35px;
-      margin: 10px 0px 10px 0px;
-    }
-
-    .inova {
-      width: 160px;
-      height: 70px
-    }
   }
 }
