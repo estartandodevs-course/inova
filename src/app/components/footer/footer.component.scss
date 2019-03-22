@@ -6,17 +6,22 @@ footer {
   justify-content: space-between;
   align-items: center;
 
-  .secfooter{
+  .secfooter {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
   }
+
   img {
     display: flex;
     width: 36px;
     height: 35px;
     margin: 10px 0px 10px 10px;
+  }
+
+  li {
+    list-style: none;
   }
 
   ul,
@@ -26,42 +31,50 @@ footer {
     flex-direction: column;
     margin: 0px 5px 0px 0px;
   }
-  .social{
+
+  .social {
     display: flex;
     list-style: none;
     flex-direction: column;
     margin: 0px 5px 0px 0px;
   }
-  .pinfo{
+
+  .pinfo {
     display: flex;
     flex-direction: row;
     align-items: center;
 
   }
-  .info{
+
+  .info {
     padding-left: 10px;
     color: white;
   }
 
-  .inova{
+  .inova {
     width: 176px;
     height: 80px;
   }
-  .contact{
+
+  .contact {
     display: flex;
     width: 33%;
   }
-  .logo{
+
+  .logo {
     display: flex;
     width: 33%;
   }
-  .icons{
+
+  .icons {
     display: flex;
     width: 15%;
     justify-content: flex-end;
     margin-right: 10px;
   }
-  .face, .insta{
+
+  .face,
+  .insta {
     margin-bottom: 30px;
   }
 
@@ -76,9 +89,48 @@ footer {
     display: flex;
     flex-direction: column;
 
+    .secfooter {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      flex-direction: column-reverse;
+      padding-top: 25px;
+    }
+
+    .icons {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      margin: 0px;
+    }
+
     .logo,
-    .icones {
-      width: unset;
+    .contact {
+      width: auto;
+    }
+    .contact{
+      padding-top: 20px;
+      padding-bottom: 30px;
+    }
+
+    a {
+      display: flex;
+      list-style: none;
+      flex-direction: column;
+      margin: 0px 0px 0px 0px;
+    }
+
+    img {
+      display: flex;
+      width: 36px;
+      height: 35px;
+      margin: 10px 0px 10px 0px;
+    }
+
+    .inova {
+      width: 160px;
+      height: 70px
     }
   }
 }
