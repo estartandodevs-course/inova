@@ -5,6 +5,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
 import { CarouselComponent} from './components/carousel/carousel.component';
 import { ButtonComponent } from './components/button/button.component';
+import { SectionContactComponent } from './components/section-contact/section-contact.component';
 
 const routes: Routes = [
   { path: '', component: MainPageComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'nav', component: NavComponent },
   { path: 'carou', component: CarouselComponent},
   { path: 'button', component: ButtonComponent},
+  { path: 'contact', component: SectionContactComponent},
   
 ];
 
