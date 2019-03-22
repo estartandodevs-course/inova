@@ -4,11 +4,10 @@
 // @import '~bootstrap/dist/css/bootstrap.min.css';
 
 nav{
-    position: fixed;
-    top: 0;
+    
     z-index: 4;
     font-size: $tamanho;
-    width: $w-nav;
+    // width: $w-nav;
     // height: $h-nav;
     div{
         // margin-left: $ul-margin;
@@ -56,7 +55,6 @@ nav{
 
 @media screen and (max-width: 768px){
     nav{
-        // z-index: ;
         ul{
             display:none;
         }
@@ -72,7 +70,7 @@ nav{
         width: 0;
         position: fixed;
         z-index: 50;
-        // top: 0;  
+        top: 0;
         right: 0;
         height: 100vh;
         background-color:#5B1D1B;
