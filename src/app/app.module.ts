@@ -11,6 +11,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { InputComponent } from './components/input/input.component';
 import { TextareaComponent } from './components/textarea/textarea.component';
 import { ButtonComponent } from './components/button/button.component';
+import { SectionContactComponent } from './components/section-contact/section-contact.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ButtonComponent } from './components/button/button.component';
     NavComponent,
     InputComponent,
     TextareaComponent,
-    ButtonComponent
+    ButtonComponent,
+    SectionContactComponent
   ],
   imports: [
     BrowserModule,
