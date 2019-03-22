@@ -16,7 +16,7 @@ main{
             width: 150px;
             height: 201px; 
             border: none; 
-            margin: 0px 47px 0px 47px;
+            margin: 30px 47px 0px 30px;
             // margin: 10px;
             img{
                 
@@ -38,7 +38,7 @@ main{
             width: 158px;
             height: 201px; 
             border: none; 
-            margin: 0px 47px 0px 47px;
+            margin: 30px 47px 0px 30px;           
             // margin: 10px;
             img{
                 
@@ -50,4 +50,52 @@ main{
         }
     }
 }
-   
+
+
+@media screen and (max-width: 768px){
+    main{
+        padding-top: 30px;
+        background-color: aqua;
+        .group-card-1{
+            padding: 0px 28px 0px 28px;
+            flex-wrap: wrap-reverse;
+        
+            div{    
+                width: 122px;
+                height: 150px; 
+                border: none; 
+                margin: 30px 0px 0px 0px;
+                // margin: 10px;
+                img{
+                    
+                }
+                p{
+                    font-size: 14px;                    
+                }
+                
+            }
+            .card-x{
+                width: 100%;
+
+            }
+        }
+        .group-card-2{
+            padding: 0px 28px 0px 28px;            
+            flex-wrap: wrap;
+        
+            div{    
+                width: 122px;
+                height: 150px; 
+                margin: 30px 0px 0px 0px;
+                img{
+                    
+                }
+                p{
+                    font-size: 14px;
+                }
+                
+            }
+        }
+    }
+       
+}
