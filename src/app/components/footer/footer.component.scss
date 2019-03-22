@@ -1,41 +1,43 @@
 @import '../../theme/variables.scss';
 
-footer{
-    background-color: $primary-color;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.footer {
+  background-color: $primary-color;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-img{
-    display: flex;
-    width: 36px;
-    height: 35px;
-    margin: 10px 0px 10px 10px;
-}
-ul,li,a{
-    display: flex;
-    list-style: none;
-}
-.devs{
-    width: 176px;
-    height: 80px;
-}
-.logo,.icones{
-    display: flex;
-    width: 33%;
-}
-.space{
-    display: flex;
-    width: 20%;
-}
-}
-@media(max-width:768px){
-    footer{
-        display: flex;
-        flex-direction: column;
+  img {
+    width: 45px;
+    ;
+  }
 
-        .logo , .icones{
-            width: unset;
-        }
+  .contact {
+    padding: 15px;
+    color: white;
+
+    p{
+      margin-left: 10px;
     }
+
+    div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+  }
+  
+  .inova{
+    width: 130px;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+
+    a:nth-child(1){
+      margin:0 15px 15px 0;
+    }
+
+  }
 }
