@@ -9,14 +9,13 @@
 
   img {
     width: 45px;
-    ;
   }
 
   .contact {
     padding: 15px;
     color: white;
 
-    p{
+    p {
       margin-left: 10px;
     }
 
@@ -26,8 +25,8 @@
       margin-bottom: 15px;
     }
   }
-  
-  .inova{
+
+  .inova {
     width: 130px;
   }
 
@@ -35,9 +34,44 @@
     display: flex;
     flex-direction: column;
 
-    a:nth-child(1){
-      margin:0 15px 15px 0;
+    a:nth-child(1) {
+      margin: 0 15px 40px 0;
     }
 
+  }
+
+  .logo {
+    width: 25%;
+  }
+}
+
+@media(max-width:768px) {
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+
+    img{
+      width: 37px;
+    }
+
+    .contact{
+      padding: 20px 0px 20px 0px;
+    }
+    .logo {
+      width: auto;
+      padding: 20px 0 20px 0;
+    }
+
+    .social {
+      flex-direction: row;
+      margin: 25px 0;
+
+      a:nth-child(1) {
+        margin: 0px 60px 0px 0px;
+      }
+      a:nth-child(2){
+        margin: 0px 0px 0px 60px;
+      }
+    }
   }
 }
