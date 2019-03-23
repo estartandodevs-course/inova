@@ -3,20 +3,13 @@ section{
     background-image: url("../../../assets/img/backgroundform.png");
     background-position-y: 50%;
     background-size: cover;
-    form{
-        // border: 1px solid #FFFFFF;
-        margin-left: 200px;
-        app-input{
-            margin-bottom: 25px;
-        }
+    
+    iframe {
+      height: 282px;
+      width: 408px;
     }
 }
 
-iframe {
-  height: 282px;
-  width: 408px;
-  margin: 30px;
-}
 @media screen and(max-width:768px){
     section{
         form{
