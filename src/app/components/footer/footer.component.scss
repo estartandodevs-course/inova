@@ -2,61 +2,59 @@
 
 .footer {
   background-color: $primary-color;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  img {
-    width: 45px;
-  }
+  width: 100vw;
+  padding: 10px;
 
   .contact {
-    padding: 15px;
+    // padding: 15px;
     color: white;
-
-    p {
-      margin-left: 10px;
-    }
-
+    width: 40%;
+    
     div {
-      display: flex;
-      align-items: center;
-      margin-bottom: 15px;
+      
+      img {
+        width: 45px;
+        height: 75px;
+      }
+
+      p {
+        margin-left: 10px;
+      }
+
     }
-  }
-
-  .inova {
-    width: 130px;
-  }
-
-  .social {
-    display: flex;
-    flex-direction: column;
-
-    a:nth-child(1) {
-      margin: 0 15px 40px 0;
-    }
-
   }
 
   .logo {
-    width: 25%;
+    // width: 25%;
+    width: 20%;
+
+    .inova {
+      width: 130px;
+      height: 75px;
+    }
+  }
+
+  .social {
+    width: 40%;
+
+    img{
+      width: 45px;
+    }
   }
 }
 
 @media(max-width:768px) {
   .footer {
-    display: flex;
     flex-direction: column-reverse;
 
-    img{
+    img {
       width: 37px;
     }
 
-    .contact{
+    .contact {
       padding: 20px 0px 20px 0px;
     }
+
     .logo {
       width: auto;
       padding: 20px 0 20px 0;
@@ -69,7 +67,8 @@
       a:nth-child(1) {
         margin: 0px 60px 0px 0px;
       }
-      a:nth-child(2){
+
+      a:nth-child(2) {
         margin: 0px 0px 0px 60px;
       }
     }
