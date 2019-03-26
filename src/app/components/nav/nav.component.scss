@@ -1,16 +1,11 @@
 @import '../../../styles.scss';
 @import '../../theme/variables.scss';
-@import url('https://fonts.googleapis.com/css?family=Comfortaa');
-// @import '~bootstrap/dist/css/bootstrap.min.css';
-
-nav{
-    
+nav{    
     z-index: 4;
     font-size: $tamanho;
-    // width: $w-nav;
-    // height: $h-nav;
+    font-family: 'Comfortaa', cursive;
+    color: white;
     div{
-        // margin-left: $ul-margin;
         img{
             width: 154px;
             height: 80px;
@@ -22,36 +17,23 @@ nav{
         list-style: none;
         width: auto;
         height: 100%;
-        margin-bottom: 0;
-        
+        margin-bottom: 0;        
         .active { 
             background-color:  darken($primary-color, 20%);                
-        }
-        
+        }        
         li{
-            height: $w-nav;
-            transition: .2s;
-            // &:hover { 
-            //     background-color:  darken($primary-color, 10%);
-            //     background-color: $color-hover;
-                
-            // }
-
+            margin-right: $ul-margin;
+            margin-left: $ul-margin;
             a{
                 text-transform: uppercase;
-                margin-right: $ul-margin;
-                margin-left: $ul-margin;
                 text-decoration: none;
-                color: white;
                 &:hover{
-                    color: inherit;
+                    color: black;                    
                 }
             }
         }
     }
 }
-
-
 
 @media screen and (max-width: 768px){
     nav{
@@ -65,7 +47,6 @@ nav{
             }
         }
     }
-
     .nav_container_mobile{        
         width: 0;
         position: fixed;
