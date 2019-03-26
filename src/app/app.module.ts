@@ -12,6 +12,7 @@ import { InputComponent } from './components/input/input.component';
 import { TextareaComponent } from './components/textarea/textarea.component';
 import { ButtonComponent } from './components/button/button.component';
 import { SectionContactComponent } from './components/section-contact/section-contact.component';
+import { SectionQuemsomosComponent } from './components/section-quemsomos/section-quemsomos.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SectionContactComponent } from './components/section-contact/section-co
     InputComponent,
     TextareaComponent,
     ButtonComponent,
-    SectionContactComponent
+    SectionContactComponent,
+    SectionQuemsomosComponent
   ],
   imports: [
     BrowserModule,

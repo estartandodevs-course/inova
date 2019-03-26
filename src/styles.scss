@@ -1,11 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 
 *{
     margin: 0;
     padding: 0;
 }
-
+.es-flex{
+    display: flex;
+}
 .es-flex-row{
     display:flex;
     flex-direction: row;
@@ -31,6 +34,9 @@
 }
 .es-ai-end{
     align-items: flex-end;
+}
+.es-flex-wrap{
+    flex-wrap: wrap;
 }
 .tofade{
     opacity: .3;

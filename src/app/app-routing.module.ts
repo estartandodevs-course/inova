@@ -14,8 +14,7 @@ const routes: Routes = [
   { path: 'nav', component: NavComponent },
   { path: 'carou', component: CarouselComponent},
   { path: 'button', component: ButtonComponent},
-  { path: 'contact', component: SectionContactComponent},
-  
+  { path: 'contact', component: SectionContactComponent},  
 ];
 
 @NgModule({
