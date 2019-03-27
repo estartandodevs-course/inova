@@ -7,8 +7,9 @@
       <span (click)="closeModal()" class="close">&times;</span>
     </div>
     <div class="modal-body es-flex-column es-j-center es-ai-center">
-      <p>Some text in the Modal Body</p>
-      <p>Some other text...</p>
+      <img [src]="contentModal.img" alt="">
+      <p>{{contentModal.description}}</p>
+      <!-- <p>Some other text...</p> -->
     </div>
   </div>
 
