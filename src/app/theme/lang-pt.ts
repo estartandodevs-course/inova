@@ -1,9 +1,9 @@
 export const LANG = {
     //NAV
     HOME: "Home",
-    ABOUT: "Quem somos",
+    ABOUT: "A Clínica",
     SPECIALITIES: "Especialidades",
-    CONTACT: "Contato",
+    CONTACT: "Fale Conosco",
 
     //HEADER
     OUR: "nossas",
