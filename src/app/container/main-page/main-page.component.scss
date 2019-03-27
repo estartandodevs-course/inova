@@ -1,0 +1,12 @@
+@import '../../../styles.scss';
+@import '../../theme/variables.scss';
+main{
+    min-height: calc(100vh - 60px );
+}
+main{
+    background-image: url("../../../assets/img/BACKGROUND.png");
+    background-attachment: fixed;
+    // background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+}
