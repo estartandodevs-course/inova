@@ -9,12 +9,12 @@
     // padding: 15px;
     color: white;
     width: 40%;
-    
+
     div {
-      
+
       img {
-        width: 45px;
-        height: 75px;
+        width: 40px;
+        height: 65px;
       }
 
       p {
@@ -25,20 +25,19 @@
   }
 
   .logo {
-    // width: 25%;
     width: 20%;
 
     .inova {
-      width: 130px;
-      height: 75px;
+      width: 154px;
+      height: 80px;
     }
   }
 
   .social {
     width: 40%;
 
-    img{
-      width: 45px;
+    img {
+      width: 40px;
     }
   }
 }
@@ -46,6 +45,8 @@
 @media(max-width:768px) {
   .footer {
     flex-direction: column-reverse;
+    background-color: #560000;
+    padding: 10px;
 
     img {
       width: 37px;
@@ -53,6 +54,7 @@
 
     .contact {
       padding: 20px 0px 20px 0px;
+      width: 100%;
     }
 
     .logo {
@@ -63,6 +65,7 @@
     .social {
       flex-direction: row;
       margin: 25px 0;
+      width: 100%;
 
       a:nth-child(1) {
         margin: 0px 60px 0px 0px;
