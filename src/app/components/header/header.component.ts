@@ -12,8 +12,27 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
+  public specialities = [
+    {
+      name: "jonatas" ,
+      img: "assets/img/dentist.png" ,
+      description: "hjkllkjhgfd" ,
+    },
+    {
+      name: "jonat" ,
+      img: "assets/img/dentist.png" ,
+      description: "hjkllkjhgfd" ,
+    },
+    {
+      name: "natas" ,
+      img: "assets/img/dentist.png" ,
+      description: "hjkllkjhgfd" ,
+    }
+
+    
+  ]
   
-  openModal() {
-    this.modalComponent.openModal();
+  openModal(item) {
+    this.modalComponent.openModal(item);
   }
 }
