@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { menu } from '../../theme/lang-pt';
+import { LANG } from '../../theme/lang-pt';
 
 
 @Component({
@@ -9,7 +9,7 @@ import { menu } from '../../theme/lang-pt';
 })
 export class NavComponent implements OnInit {
 
-  public Lang = menu;
+  public Lang = LANG;
 
   constructor() { }
 
