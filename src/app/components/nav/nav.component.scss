@@ -1,111 +1,131 @@
 @import '../../../styles.scss';
 @import '../../theme/variables.scss';
-nav{    
-    z-index: 4;
-    font-size: $tamanho;
-    font-family: 'Comfortaa', cursive;
-    color: white;
-    div{
-        img{
-            width: 154px;
-            height: 80px;
-            margin-left: 24px;
-            margin-top: 14px 
-        }
+
+nav {
+  z-index: 4;
+  font-size: $tamanho;
+  font-family: 'Comfortaa', cursive;
+  color: white;
+
+  div {
+    img {
+      width: 154px;
+      height: 80px;
+      margin-left: 24px;
+      margin-top: 14px
     }
+  }
+
+  ul {
+    list-style: none;
+    width: auto;
+    height: 100%;
+    margin-bottom: 0;
+
+    .active {
+      background-color: darken($primary-color, 20%);
+    }
+
+    li {
+      margin-right: $ul-margin;
+      margin-left: $ul-margin;
+
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
     ul {
-        list-style: none;
-        width: auto;
+      display: none;
+    }
+
+    .img-bnt {
+      margin-right: $pattern-margin;
+
+      img {
+        width: 30px;
+      }
+    }
+  }
+
+  .nav_container_mobile {
+    width: 0;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #5B1D1B;
+    overflow-x: hidden;
+    transition: 0.3s;
+
+    header {
+      height: 99px;
+      border-bottom: 1px solid #FFFFFF;
+      box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+
+      a {
+        img {
+          height: 53px;
+          box-shadow: -5px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+      }
+
+      #exit {
+        border: none;
+        font-size: 36px;
+        color: #FFFFFF;
+        font-family: 'Comfortaa', cursive;
+      }
+    }
+
+    div {
+      height: 100%;
+
+      ul {
         height: 100%;
-        margin-bottom: 0;        
-        .active { 
-            background-color:  darken($primary-color, 20%);                
-        }        
-        li{
-            margin-right: $ul-margin;
-            margin-left: $ul-margin;
-            a{
-                text-transform: uppercase;
-                text-decoration: none;
-                &:hover{
-                    color: black;                    
-                }
-            }
-        }
-    }
-}
+        list-style: none;
+        font-family: 'Comfortaa', cursive;
 
-@media screen and (max-width: 768px){
-    nav{
-        ul{
-            display:none;
+        li {
+          color: white;
+          padding: $pattern-margin;
+          padding-left: 69px;
+
+          &:hover {
+            background-color: lighten(rgba(6, 6, 8, 1), 10%);
+          }
         }
-        .img-bnt{
-            margin-right: $pattern-margin;
-            img{
-                width: 30px;
-            }
+      }
+
+      div {
+        a {
+          img {
+            height: 47px;
+          }
         }
+      }
     }
-    .nav_container_mobile{        
-        width: 0;
-        position: fixed;
-        z-index: 50;
-        top: 0;
-        right: 0;
-        height: 100vh;
-        background-color:#5B1D1B;
-        overflow-x: hidden;
-        transition: 0.3s;
-        header{
-            height: 99px;
-            border-bottom: 1px solid #FFFFFF;
-            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
-            padding: 10px;
-            a{
-                img{                    
-                    height: 53px;
-                    box-shadow: -5px 4px 4px rgba(0, 0, 0, 0.25);
-                }
-            }
-            #exit{
-                border: none;
-                font-size: 36px;
-                color: #FFFFFF;
-                font-family: 'Comfortaa', cursive;
-            }
-        }
-        div{
-            height: 100%;
-            ul{                
-                height: 100%;
-                list-style: none;
-                li{
-                    color: white;
-                    padding: $pattern-margin;                    
-                    padding-left: 69px;                    
-                    &:hover{
-                        background-color: lighten(rgba(6, 6, 8, 1), 10%);
-                    }
-                }
-            }
-            div{
-                a{
-                    img{                        
-                        height: 47px;
-                    }
-                }
-            }
-        }
-    }
+  }
 
 }
 
-@media screen and (min-width: 769px){
-    .img-bnt{
-        display: none;
-    }
-    .nav_container_mobile{
-        display:none;
-    }
+@media screen and (min-width: 769px) {
+  .img-bnt {
+    display: none;
+  }
+
+  .nav_container_mobile {
+    display: none;
+  }
 }
