@@ -1,5 +1,5 @@
 # Inova
-[Inova] (https://estartando-devs.github.io/inova/dist/inova/)
+[Inova](https://estartando-devs.github.io/inova/dist/inova/)
 
 [Inova](https://estartando-devs.github.io/inova/dist/inova/)
 
