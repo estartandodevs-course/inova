@@ -13,6 +13,7 @@ import { TextareaComponent } from './components/textarea/textarea.component';
 import { ButtonComponent } from './components/button/button.component';
 import { SectionContactComponent } from './components/section-contact/section-contact.component';
 import { SectionQuemsomosComponent } from './components/section-quemsomos/section-quemsomos.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +27,14 @@ import { SectionQuemsomosComponent } from './components/section-quemsomos/sectio
     TextareaComponent,
     ButtonComponent,
     SectionContactComponent,
-    SectionQuemsomosComponent
+    SectionQuemsomosComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ModalComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
