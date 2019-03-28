@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
-
+@import 'src/app/theme/variables.scss';
 *{
     margin: 0;
     padding: 0;
@@ -57,10 +57,15 @@
     border: 1px solid;
     border-color: white;
     width: 317px;
-    margin-bottom: 25px;
+    // margin-bottom: 25px;
+    padding: 5px;
+    color: $fontColor2;
+    font-family: $opensans;
+    text-transform: uppercase;
+    outline: 0;
 }
 .card{
-    background-color: #F6F6F6;
+    background-color: $bgc-6;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 150px;
     height: 201px; 

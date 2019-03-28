@@ -1,90 +1,115 @@
 @import '../../theme/variables.scss';
-.about{
-    min-height: 100vh;
-    background-color: $bgc-5;
-    header{
-        background-color: $bgc-1;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-        height: 81px;
-        width: 100%;
-        margin-bottom: 56px;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-        h2{
-            font-size: 36px;
-            font-family: $comforta;
-            color: $fontColor2;
-        }
+
+.about {
+  min-height: 100vh;
+  background-color: $bgc-5;
+
+  header {
+    background-color: $bgc-1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    height: 81px;
+    width: 100%;
+    margin-bottom: 56px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+
+    h2 {
+      font-size: 36px;
+      font-family: $comforta;
+      color: $fontColor2;
     }
-    main{
-        margin: 10px;        
-        p{
-            font-size: 28px;
-            font-family: $opensans;
-        }
-        div{            
-            div{
-                padding: 15px;
-                margin: 25px;                
-                max-width: 25vw;            
-                div{
-                    border-radius: 50%;
-                    background-color: white;
-                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                    width: 124px;
-                    height: 117px;
-                    // img{
-    
-                    // }
-                }
-                h3{
-                    font-size: 30px;
-                    font-family: $opensans;
-                }
-                p{
-                    font-size: 20px;
-                    font-family: $opensans;
-                }
-            }
-        }
+  }
+
+  main {
+    margin: 10px;
+
+    p {
+      font-size: 28px;
+      font-family: $opensans;
     }
+
+    div {
+      div {
+        padding: 15px;
+        margin: 25px;
+        max-width: 25vw;
+
+        img {
+        //   width: 94px;
+          height: 141px;
+        }
+
+        div {
+          border-radius: 50%;
+          background-color: white;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          width: 100px;
+          height: 95px;
+          display: flex;
+          align-items: flex-end;
+        //   justify-content: center;
+
+
+          // img{
+
+          // }
+        }
+
+        h3 {
+          font-size: 30px;
+          font-family: $opensans;
+        }
+
+        p {
+          font-size: 20px;
+          font-family: $opensans;
+        }
+      }
+    }
+  }
 }
 
-@media screen and(max-width:768px){
-    .about{
-        background-color: $bgc-4;
-        header{
-            h2{
-                font-size: 24px;
-                font-family: $comforta;
-                color: $fontColor2;
-            }
-        }
-        main{  
-            p{
-                font-size: 14px;
-                text-align: center;
-            }          
-            div{
-                         
-                div{
-                    max-width: none;   
-                    width: 100%;
-                    div{
-                        width: 101px;
-                        height: 90px;
-                        // img{
-        
-                        // }
-                    }
-                    h3{
-                        font-size: 18px;
-                    }
-                    p{
-                        font-size: 13px;
-                    }
-                }
-            }
-    
-        }
+@media screen and(max-width:768px) {
+  .about {
+    background-color: $bgc-4;
+
+    header {
+      h2 {
+        font-size: 24px;
+        font-family: $comforta;
+        color: $fontColor2;
+      }
     }
+
+    main {
+      p {
+        font-size: 14px;
+        text-align: center;
+      }
+
+      div {
+
+        div {
+          max-width: none;
+          width: 100%;
+
+          div {
+            width: 101px;
+            height: 90px;
+            // img{
+
+            // }
+          }
+
+          h3 {
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+
+    }
+  }
 }

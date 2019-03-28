@@ -33,6 +33,14 @@ export const LANG = {
     NUMBER: "(21) 3108-4899",
     EMAIL: "inovadentista@gmail.com",
 
+    // PLACEHOLDER
+    PH_NAME: "Nome",
+    PH_TEL: "Telefone",
+    PH_EMAIL: "E-mail",
+    PH_MESSAGE: "Menssagem",
+
+    SEND: "Enviar"
+
 
 }
  
