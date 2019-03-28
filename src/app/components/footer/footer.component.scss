@@ -7,7 +7,7 @@
 
   .contact {
     // padding: 15px;
-    color: white;
+    color: $third-color;
     width: 40%;
 
     div {
@@ -45,7 +45,7 @@
 @media(max-width:768px) {
   .footer {
     flex-direction: column-reverse;
-    background-color: #560000;
+    background-color:$second-color ;
     padding: 10px;
 
     img {
