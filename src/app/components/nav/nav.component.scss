@@ -2,7 +2,7 @@
 @import '../../theme/variables.scss';
 nav {
   z-index: 4;
-  font-size: $tamanho;
+  font-size: 18px;
   font-family: $comforta;
   color: $fontColor2;
   div {
@@ -36,13 +36,20 @@ nav {
 
 @media screen and (max-width: 768px) {
   nav {
+    div {
+      img {
+        width: 102px;
+        height: 53px;
+        margin: 10px 20px;
+      }
+    }
     ul {
       display: none;
     }
     .img-bnt {
-      margin-right: $pattern-margin;
       img {
-        width: 30px;
+        width: 48px;
+        height: 46px;
       }
     }
   }
@@ -53,7 +60,7 @@ nav {
     top: 0;
     right: 0;
     height: 100vh;
-    background-color: $bgc-mobileMenu;
+    background-color: $bgc-3;
     overflow-x: hidden;
     transition: 0.3s;
     header {
@@ -76,6 +83,7 @@ nav {
     }
     div {
       height: 100%;
+      padding: 35px 0px 15px 0px;
       ul {
         height: 100%;
         list-style: none;

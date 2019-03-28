@@ -30,8 +30,9 @@
         animation-duration: .5s;
         .modal-header{
             width: 100%;
-            // padding: 5px;
-            // background-color: aqua;
+            span{
+                margin-right: 10px;
+            }
         }
         .modal-body{
             width: 100%;

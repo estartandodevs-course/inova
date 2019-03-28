@@ -1,43 +1,37 @@
 @import '../../theme/variables.scss';
 
 .footer {
-  background-color: $primary-color;
-  // width: 100vw;
+  background-color: $bgc-2;
   padding: 10px;
-
   .contact {
-    // padding: 15px;
-    color: $third-color;
+    color: $fontColor2;
     width: 40%;
-
     div {
-
       img {
         width: 40px;
         height: 65px;
       }
-
       p {
         margin-left: 10px;
+        color: $fontColor2;
+        font-family: $opensans;
       }
-
     }
   }
-
   .logo {
     width: 20%;
-
     .inova {
       width: 154px;
       height: 80px;
     }
   }
-
   .social {
     width: 40%;
-
     img {
       width: 50px;
+    }
+    a{
+      margin-block-start:20px; 
     }
   }
 }
@@ -45,32 +39,25 @@
 @media(max-width:768px) {
   .footer {
     flex-direction: column-reverse;
-    background-color:$second-color ;
-    padding: 10px;
-
     img {
       width: 37px;
     }
-
     .contact {
       padding: 20px 0px 20px 0px;
       width: 100%;
     }
-
     .logo {
-      width: auto;
+      width: 125px;
+      height: 63px;
       padding: 20px 0 20px 0;
     }
-
     .social {
       flex-direction: row;
       margin: 20px 0;
       width: 100%;
-
       a:nth-child(1) {
         margin: 0px 60px 0px 0px;
       }
-
       a:nth-child(2) {
         margin: 0px 0px 0px 60px;
       }

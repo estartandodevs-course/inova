@@ -1,31 +1,27 @@
-$primary-color: rgba(#ac0000, $alpha: 1.0);
-$second-color: #560000;
 $color-hover:  rgb(153,153,153);
-$third-color: white;
 $shadow-color: rgba(0, 0, 0, 0.25);
 $shadow-header: rgba(0, 0, 0, 0.2);
 $shadow-hover: lighten(rgba(6, 6, 8, 1), 10%);
-$text-color:black; //#1c1c1c
-$h2-color:#BF0202;
-$nav-color:#5B1D1B;
-$sec-contact:#710000;
-$tamanho: 18px;
-$w-nav: 100%;
-$h-nav: 60px;
 $ul-margin: 15px;
 $pattern-padding: 15px;
 $pattern-margin: 15px;
 
-//FONTS 
+//BACKGROUNDS COLORS
+$bgc-1:#710000 ;
+$bgc-2: #560000;
+$bgc-3: #5B1D1B;
+$bgc-4: white;
+$bgc-5: #F2DFDF;
+
+//FONTS Family and Color
 $opensans: 'Open Sans', sans-serif;
 $comforta: 'Comfortaa', cursive;
 $fontColor1: #000000;
 $fontColor2: #FFFFFF;
+$fontColor3: #BF0202;
 
 // MODAL COLORS
 $bgc-modal: rgba(0,0,0,0.4);
 $bgc-modalContent: #F6F6F6;
 $shadow-modalContent: 0 4px 8px 0 rgba(0,0,0,0.2);
 
-//MOBILE MENU
-$bgc-mobileMenu: #5B1D1B;

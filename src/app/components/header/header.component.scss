@@ -1,17 +1,17 @@
 @import '../../theme/variables.scss';
 main{
-    background-color: $third-color;
+    background-color: $bgc-4;
     min-height: 100vh;
     padding: 80px;
     font-family: 'Comfortaa', cursive;
     h2{
-        color: $h2-color;
+        color: $fontColor3;
         font-size: 36px;
         text-align: center;
         text-shadow: 0px 4px 4px $shadow-color;
     }
     p{
-        color: $text-color;
+        color: $fontColor1;
         padding-bottom: 25px;
         font-size: 95%;
     }
