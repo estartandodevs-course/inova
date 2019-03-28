@@ -9,18 +9,18 @@
     width: 40%;
 
     div {
-      img {
-        width: 40px;
-        height: 65px;
-      }
 
-      p {
-        margin-left: 10px;
+      a {
+        color: $fontColor2;
+        font-family: $opensans;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
 
-        a {
-          color: $fontColor2;
-          font-family: $opensans;
-          text-decoration: none;
+        img {
+          width: 40px;
+          height: 65px;
+          padding-right: 10px;
         }
       }
     }
