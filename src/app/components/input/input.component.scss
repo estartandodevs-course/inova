@@ -1,12 +1,9 @@
+@import'../../theme/variables.scss';
+@import'../../../styles.scss';
 input {
-    background-color: transparent;
-    border-radius: 5px;
-    width: 317px;
-    height:46px;
-    border: 1px solid;
-    border-color: white;
-    margin-bottom: 25px;
-
+    height: calc(46px - 5px);
+    color: $fontColor2;
+    font-family: $opensans;
 }
 ::placeholder {
     color: white;

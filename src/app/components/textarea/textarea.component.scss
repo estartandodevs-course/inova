@@ -1,2 +1,5 @@
 @import '../../../styles.scss';
 @import '../../theme/variables.scss';
+::placeholder {
+    color: white;
+}
