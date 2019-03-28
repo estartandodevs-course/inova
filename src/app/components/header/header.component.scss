@@ -1,5 +1,4 @@
 @import '../../theme/variables.scss';
-
 main{
     background-color: $third-color;
     min-height: 100vh;
@@ -17,7 +16,8 @@ main{
         font-size: 95%;
     }
     .group-card-1{
-        flex-wrap: wrap-reverse;   
+        flex-wrap: wrap; 
+        font-family: $opensans;  
     }
     .group-card-2{
         flex-wrap: wrap;

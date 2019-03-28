@@ -6,8 +6,9 @@
     <div class="modal-header es-flex-row es-j-end es-ai-center">
       <span (click)="closeModal()" class="close">&times;</span>
     </div>
-    <div class="modal-body es-flex-column es-j-center es-ai-center">
+    <div class="modal-body es-flex-column es-j-around es-ai-center">
       <img [src]="contentModal.img" alt="">
+      <h2>{{contentModal.name}}</h2>
       <p>{{contentModal.description}}</p>
       <!-- <p>Some other text...</p> -->
     </div>
