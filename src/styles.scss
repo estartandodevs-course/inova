@@ -78,3 +78,8 @@
     height: 50%;
     width: 65%;
 }
+@media screen and(max-width: 768px){
+    .style-input{
+        width: 80vw !important;
+    }
+}
