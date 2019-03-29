@@ -1,7 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
+
+import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MainPageComponent } from './container/main-page/main-page.component';
@@ -14,6 +19,8 @@ import { ButtonComponent } from './components/button/button.component';
 import { SectionContactComponent } from './components/section-contact/section-contact.component';
 import { SectionQuemsomosComponent } from './components/section-quemsomos/section-quemsomos.component';
 import { ModalComponent } from './components/modal/modal.component';
+
+  
 
 @NgModule({
   declarations: [
@@ -32,7 +39,10 @@ import { ModalComponent } from './components/modal/modal.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    NgxPageScrollModule,
+    NgxPageScrollCoreModule.forRoot({duration: 1000 })
   ],
   providers: [ModalComponent],
   bootstrap: [AppComponent]

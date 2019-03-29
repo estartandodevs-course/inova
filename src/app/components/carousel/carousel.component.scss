@@ -3,15 +3,19 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 div{
-    height: 100vh !important;
+    height: calc(100vh - 100px) !important;
 }
 p{
-    font-family: 'Comfortaa', cursive;
-    font-size: 64px
+    font-family: $comforta;
+    font-size: 64px;
 }
 @media screen and(max-width: 768px){
+    div{
+    height: calc(100vh - 77px) !important;
+    }
     p{
-        font-family: 'Comfortaa', cursive;
-        font-size: 34px
+        font-family: $comforta;
+        font-size: 34px;
+        color: $fontColor2;
     }
 }

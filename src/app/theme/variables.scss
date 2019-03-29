@@ -1,8 +1,28 @@
-$primary-color: rgba(#ac0000, $alpha: 1.0);
 $color-hover:  rgb(153,153,153);
-$tamanho: 18px;
-$w-nav: 100%;
-$h-nav: 60px;
+$shadow-color: rgba(0, 0, 0, 0.25);
+$shadow-header: rgba(0, 0, 0, 0.2);
+$shadow-hover: lighten(rgba(6, 6, 8, 1), 10%);
 $ul-margin: 15px;
 $pattern-padding: 15px;
 $pattern-margin: 15px;
+
+//BACKGROUNDS COLORS
+$bgc-1:#710000 ;
+$bgc-2: #560000;
+$bgc-3: #5B1D1B;
+$bgc-4: white;
+$bgc-5: #F2DFDF;
+$bgc-6: #F6F6F6;
+
+
+//FONTS Family and Color
+$opensans: 'Open Sans', sans-serif;
+$comforta: 'Comfortaa', cursive;
+$fontColor1: #000000;
+$fontColor2: #FFFFFF;
+$fontColor3: #BF0202;
+
+// MODAL COLORS
+$bgc-modal: rgba(0,0,0,0.4);
+$shadow-modalContent: 0 4px 8px 0 rgba(0,0,0,0.2);
+

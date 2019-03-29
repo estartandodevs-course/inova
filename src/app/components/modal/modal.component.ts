@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-modal',
@@ -12,18 +12,19 @@ export class ModalComponent implements OnInit {
   ngOnInit() {
   }
 
+  @Input() contentModal
+
   public openModal(){
     let modal = document.getElementById('myModal');
-    console.log(modal.style.display);
     if(modal.style.display == "none" || modal.style.display == ""){
       modal.style.display = "block";
     }else{
       modal.style.display = "none";
     };
   }
+
   public closeModal(){
     let modal = document.getElementById('myModal');
-    console.log(modal.style.display);
     if(modal.style.display == "block"){
       modal.style.display = "none";
     }

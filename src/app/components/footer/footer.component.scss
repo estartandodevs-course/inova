@@ -1,26 +1,28 @@
 @import '../../theme/variables.scss';
 
 .footer {
-  background-color: $primary-color;
-  // width: 100vw;
+  background-color: $bgc-2;
   padding: 10px;
 
   .contact {
-    // padding: 15px;
-    color: white;
+    color: $fontColor2;
     width: 40%;
 
     div {
 
-      img {
-        width: 40px;
-        height: 65px;
-      }
+      a {
+        color: $fontColor2;
+        font-family: $opensans;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
 
-      p {
-        margin-left: 10px;
+        img {
+          width: 40px;
+          height: 65px;
+          padding-right: 10px;
+        }
       }
-
     }
   }
 
@@ -37,7 +39,11 @@
     width: 40%;
 
     img {
-      width: 40px;
+      width: 50px;
+    }
+
+    a {
+      margin-block-start: 20px;
     }
   }
 }
@@ -45,8 +51,6 @@
 @media(max-width:768px) {
   .footer {
     flex-direction: column-reverse;
-    background-color: #560000;
-    padding: 10px;
 
     img {
       width: 37px;
@@ -58,13 +62,14 @@
     }
 
     .logo {
-      width: auto;
+      width: 125px;
+      height: 63px;
       padding: 20px 0 20px 0;
     }
 
     .social {
       flex-direction: row;
-      margin: 25px 0;
+      margin: 20px 0;
       width: 100%;
 
       a:nth-child(1) {

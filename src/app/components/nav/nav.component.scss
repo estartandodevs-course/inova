@@ -1,41 +1,35 @@
 @import '../../../styles.scss';
 @import '../../theme/variables.scss';
-
 nav {
   z-index: 4;
-  font-size: $tamanho;
-  font-family: 'Comfortaa', cursive;
-  color: white;
-
+  font-size: 18px;
+  font-family: $comforta;
+  color: $fontColor2;
+  position: sticky;
+  top: 0;
   div {
     img {
       width: 154px;
       height: 80px;
-      margin-left: 24px;
-      margin-top: 14px
+      margin: 10px 20px;
     }
   }
-
   ul {
     list-style: none;
     width: auto;
     height: 100%;
     margin-bottom: 0;
-
-    .active {
-      background-color: darken($primary-color, 20%);
-    }
-
+    // .active {
+    //   background-color: darken($primary-color, 20%);
+    // }
     li {
       margin-right: $ul-margin;
       margin-left: $ul-margin;
-
       a {
         text-transform: uppercase;
         text-decoration: none;
-
         &:hover {
-          color: black;
+          color: $fontColor1;
         }
       }
     }
@@ -44,19 +38,23 @@ nav {
 
 @media screen and (max-width: 768px) {
   nav {
+    div {
+      img {
+        width: 102px;
+        height: 53px;
+        margin: 10px 20px;
+      }
+    }
     ul {
       display: none;
     }
-
     .img-bnt {
-      margin-right: $pattern-margin;
-
       img {
-        width: 30px;
+        width: 48px;
+        height: 46px;
       }
     }
   }
-
   .nav_container_mobile {
     width: 0;
     position: fixed;
@@ -64,50 +62,43 @@ nav {
     top: 0;
     right: 0;
     height: 100vh;
-    background-color: #5B1D1B;
+    background-color: $bgc-3;
     overflow-x: hidden;
     transition: 0.3s;
-
     header {
       height: 99px;
-      border-bottom: 1px solid #FFFFFF;
+      border-bottom: 1px solid $fontColor2;
       box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
       padding: 10px;
-
       a {
         img {
           height: 53px;
-          box-shadow: -5px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: -5px 4px 4px $shadow-color;
         }
       }
-
       #exit {
         border: none;
         font-size: 36px;
-        color: #FFFFFF;
-        font-family: 'Comfortaa', cursive;
+        color: $fontColor2;
+        font-family: $comforta;
       }
     }
-
     div {
       height: 100%;
-
+      padding: 35px 0px 15px 0px;
       ul {
         height: 100%;
         list-style: none;
-        font-family: 'Comfortaa', cursive;
-
+        font-family: $comforta;
         li {
-          color: white;
+          color: $fontColor2;
           padding: $pattern-margin;
           padding-left: 69px;
-
           &:hover {
-            background-color: lighten(rgba(6, 6, 8, 1), 10%);
+            background-color: $shadow-hover;
           }
         }
       }
-
       div {
         a {
           img {
@@ -117,14 +108,12 @@ nav {
       }
     }
   }
-
 }
 
 @media screen and (min-width: 769px) {
   .img-bnt {
     display: none;
   }
-
   .nav_container_mobile {
     display: none;
   }

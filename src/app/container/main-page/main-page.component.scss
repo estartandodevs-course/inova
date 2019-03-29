@@ -4,9 +4,15 @@ main{
     min-height: calc(100vh - 60px );
 }
 main{
-    background-image: url("../../../assets/img/BACKGROUND.png");
+    background-image: url("/assets/img/BACKGROUND.png");
     background-attachment: fixed;
     // background-position-x: 50%;
     background-position-y: 50%;
-    background-size: cover;
+    background-size: auto;
+}
+
+@media screen and (max-width: 768px){
+    main{
+        background-image: url("/assets/img/backgroundform.png");
+    }
 }
