@@ -12,6 +12,7 @@ nav {
       width: 154px;
       height: 80px;
       margin: 10px 20px;
+      cursor: pointer;
     }
   }
   ul {
@@ -19,15 +20,13 @@ nav {
     width: auto;
     height: 100%;
     margin-bottom: 0;
-    // .active {
-    //   background-color: darken($primary-color, 20%);
-    // }
     li {
       margin-right: $ul-margin;
       margin-left: $ul-margin;
       a {
         text-transform: uppercase;
         text-decoration: none;
+        color: $fontColor2;
         &:hover {
           color: $fontColor1;
         }
@@ -35,7 +34,6 @@ nav {
     }
   }
 }
-
 @media screen and (max-width: 768px) {
   nav {
     div {
@@ -91,11 +89,17 @@ nav {
         list-style: none;
         font-family: $comforta;
         li {
-          color: $fontColor2;
           padding: $pattern-margin;
           padding-left: 69px;
           &:hover {
             background-color: $shadow-hover;
+          }
+          a{
+            text-decoration: none;
+            color: $fontColor2;
+          }
+          a:focus{
+            background-color: none;
           }
         }
       }
@@ -109,7 +113,6 @@ nav {
     }
   }
 }
-
 @media screen and (min-width: 769px) {
   .img-bnt {
     display: none;
