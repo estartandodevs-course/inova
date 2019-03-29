@@ -1,45 +1,10 @@
 <main id="specialities" class="es-flex-column es-j-around es-ai-center">
-  <h2>Nossas<br> Especialidades</h2>
+  <h2>Nossas<br>Especialidades</h2>
   <section class="group-card-1 es-flex-row es-j-around es-ai-center ">
     <div (click)="openModal(item)" *ngFor="let item of specialities" class="es-flex-column es-ai-center es-j-between card">
       <img class="icon" [src]="item.img" alt="">
       <p>{{item.name}}</p>
     </div>
-    <!-- <div class="es-flex-column es-ai-center es-j-between card">
-      <img class="icon" src="assets/img/dentist.png" alt="">
-      <p>CIRURGIA</p>
-    </div>
-    <div class="es-flex-column es-ai-center es-j-between card">
-      <img class="icon" src="assets/img/dental-care.png" alt="">
-      <p>ENDODONTIA</p>
-    </div>
-    <div class="es-flex-column es-ai-center es-j-between card">
-      <img class="icon" src="assets/img/shiny-tooth.png" alt="">
-      <p>ESTÉTICA</p>
-    </div>
-    <div class="es-flex-column es-ai-center es-j-between card">
-      <img class="icon" src="assets/img/dental.png" alt="">
-      <p>ESTOMATOLOGIA</p>
-    </div>
-  </section>
-
-  <section class=" group-card-2 es-flex-row es-j-around es-ai-center ">
-    <div class="es-flex-column es-ai-center es-j-between card">
-      <img class="icon" src="../../../assets/img/fake-tooth.png" alt="">
-      <p>IMPLANTODONTIA</p>
-    </div>
-    <div class="es-flex-column es-ai-center es-j-between card">
-      <img class="icon" src="../../../assets/img/tooth-with-braces.png" alt="">
-      <p>ORTODONTIA</p>
-    </div>
-    <div class="es-flex-column es-ai-center es-j-between card">
-      <img class="icon" src="../../../assets/img/tooth.png" alt="">
-      <p>PERIODONTIA</p>
-    </div>
-    <div class="es-flex-column es-ai-center es-j-between card">
-      <img class="icon" src="../../../assets/img/tooth_(1).png" alt="">
-      <p>DENTÍSTICA</p>
-    </div> -->
   </section>
 </main>
 <app-modal 
