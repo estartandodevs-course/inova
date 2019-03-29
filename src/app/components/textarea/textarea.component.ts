@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TextareaComponent implements OnInit {
 
+  @Input() value= ""
   @Input() placeholder : string
   constructor() { }
 

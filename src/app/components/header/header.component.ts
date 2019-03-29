@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
   public Lang = LANG
 
   ngOnInit() {
-    console.log(LANG)
+    // console.log(LANG)
   }
   public specialities = [
     {

@@ -5,12 +5,12 @@
     <app-input #nome type="text" placeholder="{{Lang.PH_NAME}}"></app-input>
     <app-input #tel type="tel" placeholder="{{Lang.PH_TEL}}"></app-input>
     <app-input #email type="email" placeholder="{{Lang.PH_EMAIL}}"></app-input>
-    <app-textarea placeholder="{{Lang.PH_MESSAGE}}"></app-textarea>
+    <app-textarea #message placeholder="{{Lang.PH_MESSAGE}}"></app-textarea>
     <app-button 
       type="submit" 
       value="submit" 
       [title]="Lang.SEND"
-      (onClick)="send(nome.value, tel.value, email.value)">
+      (onClick)="send(nome.value, tel.value, email.value, message.value)">
     </app-button>
   </form>
   <div class="map">
