@@ -36,6 +36,8 @@ nav {
 }
 @media screen and (max-width: 768px) {
   nav {
+    position: sticky;
+    top: 0;
     div {
       img {
         width: 102px;
