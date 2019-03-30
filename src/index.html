@@ -1,17 +1,41 @@
 <!doctype html>
 <html lang="pt-br">
+
 <head>
+  <meta name="theme-color" content="#710000">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#710000">
+  <meta name="msapplication-navbutton-color" content="#710000">
   <meta charset="utf-8">
-  <title>Inova</title>
+  <title>Innova</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 </head>
+
 <body>
   <app-root></app-root>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+    var posicaoInicial = $('body').position().top;
+    $(document).scroll(function () { 
+      var posicaoScroll = $(document).scrollTop();
+      var alturaScroll = window.innerHeight;
+      console.log(alturaScroll)
+      console.log(posicaoScroll)
+      console.log(posicaoInicial)
+      if( posicaoScroll >100 && alturaScroll < 680){
+       $('.nav-bar').css('background-color', "rgba(0, 0, 0, 0.8)");
+       $('.nav-bar').css('transition', "0.5s"); 
+      }
+      else{
+        $('.nav-bar').css('background-color', "rgba(0, 0, 0, 0.0)");
+      }
+    })
+        
+  </script>
 </body>
+
 </html>

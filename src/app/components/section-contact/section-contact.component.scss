@@ -25,11 +25,10 @@ section{
     margin-bottom: 10px;
     iframe {
         height: 282px;
-        width: 408px;
+        width: 45vw;
+    }
     }
 }
-}
-
 @media screen and(max-width:768px){
     section{
         background: $bgc-1;
@@ -38,11 +37,14 @@ section{
             hr{
                 display: none;
             }
+        }
+        h2{
+        margin-bottom: 10px;
         }   
         .map{
             iframe {
             height: 241px;
-            width: 344px;
+            width: 80vw;
             }
         }        
     }

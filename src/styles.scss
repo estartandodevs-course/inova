@@ -6,6 +6,15 @@
     margin: 0;
     padding: 0;
 }
+body::-webkit-scrollbar {
+    background-color: #f5eeee;
+    width: 4px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: $bgc-1;
+    border-radius: 10px;
+  }
 .es-flex{
     display: flex;
 }
@@ -77,4 +86,9 @@
     margin-top: 10px;
     height: 50%;
     width: 65%;
+}
+@media screen and(max-width: 768px){
+    .style-input{
+        width: 80vw !important;
+    }
 }

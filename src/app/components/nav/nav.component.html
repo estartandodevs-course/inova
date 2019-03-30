@@ -1,13 +1,13 @@
-<nav class="es-flex-row es-j-between es-ai-center">
+<nav class="es-flex-row es-j-between es-ai-center nav-bar">
   <div routerLink="">
-    <a>
+    <a href="index.html">
       <img src="assets/img/logo.png" alt="">
     </a>  
   </div>  
   <ul class="es-flex-row list">
-    <li class="es-flex-row es-ai-center"><a pageScroll [pageScrollEasing]="easeOutElastic" href="#specialities">{{isHome(Lang.SPECIALITIES)}}</a></li>|
-    <li class="es-flex-row es-ai-center" routerLink="/header" routerLinkActive="active"><a>{{Lang.ABOUT}}</a></li>|
-    <li class="es-flex-row es-ai-center" ><a>{{Lang.CONTACT}}</a></li>
+    <li class="es-flex-row es-ai-center"><a pageScroll [pageScrollEasing]="easeOutElastic" href="#specialities">{{Lang.SPECIALITIES}}</a></li>|
+    <li class="es-flex-row es-ai-center"><a pageScroll [pageScrollEasing]="easeOutElastic" href="#about">{{Lang.ABOUT}}</a></li>|
+    <li class="es-flex-row es-ai-center"><a pageScroll [pageScrollEasing]="easeOutElastic" href="#contact">{{Lang.CONTACT}}</a></li>
   </ul>
   <div class="img-bnt" (click)="openMenu()">
     <img  src="assets/img/menu-icon.png">
@@ -15,14 +15,14 @@
 </nav>
 <div class="nav_container_mobile es-flex-column" id="go">
     <header class="es-flex-row es-j-between es-ai-center">
-      <a (click)="openMenu()" routerLink=""><img src="assets/img/logo.png" alt=""></a>
+      <a (click)="openMenu()" ><img src="assets/img/logo.png" alt=""></a>
       <a (click)="openMenu()" id="exit">X</a>
     </header>
     <div class="es-flex-column es-j-between">
       <ul class="es-flex-column " >
-        <li routerLink="/nav"  (click)="openMenu()">{{Lang.SPECIALITIES}}</li>
-        <li routerLink="/home" (click)="openMenu()">{{Lang.ABOUT}}</li>
-        <li>{{Lang.CONTACT}}</li>
+        <li (click)="openMenu()"><a pageScroll [pageScrollEasing]="easeOutElastic" href="#specialities">{{Lang.SPECIALITIES}}</a></li>
+        <li (click)="openMenu()"><a pageScroll [pageScrollEasing]="easeOutElastic" href="#about">{{Lang.ABOUT}}</a></li>
+        <li (click)="openMenu()"><a pageScroll [pageScrollEasing]="easeOutElastic" href="#contact">{{Lang.CONTACT}}</a></li>
       </ul>
       <div class="es-flex-row es-j-around es-ai-end">
         <a href=""><img src="assets/img/facebook-icon.png" alt=""></a>

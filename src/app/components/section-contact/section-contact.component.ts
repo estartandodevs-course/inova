@@ -14,8 +14,8 @@ export class SectionContactComponent implements OnInit {
   ngOnInit() {
   }
 
-  send(nome, tel, email){
-    console.log("EVENT SECTION   ---   ", nome, tel, email)
+  send(nome, tel, email, message){
+    console.log("EVENT SECTION   ---   ", nome, tel, email, message)
   }
 
 }
