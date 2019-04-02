@@ -20,7 +20,6 @@ export class HeaderComponent implements OnInit {
   public Lang = LANG
 
   ngOnInit() {
-    // console.log(LANG)
   }
   public specialities = [
     {
@@ -72,6 +71,6 @@ export class HeaderComponent implements OnInit {
   
   openModal(item) {
     this.itemSelected = item
-    this.modalComponent.openModal();
+    this.modalComponent.openModal(this.itemSelected);
   }
 }

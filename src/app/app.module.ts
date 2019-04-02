@@ -19,6 +19,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { SectionContactComponent } from './components/section-contact/section-contact.component';
 import { SectionQuemsomosComponent } from './components/section-quemsomos/section-quemsomos.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { ModalService } from './components/modal/modal.service';
 
   
 
@@ -44,7 +45,7 @@ import { ModalComponent } from './components/modal/modal.component';
     NgxPageScrollModule,
     NgxPageScrollCoreModule.forRoot({duration: 1000 })
   ],
-  providers: [ModalComponent],
+  providers: [ModalComponent, ModalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
