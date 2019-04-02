@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalComponent } from 'src/app/components/modal/modal.component';
 
 @Component({
   selector: 'app-main-page',
@@ -7,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalComponent: ModalComponent) { }
 
   ngOnInit() {
+    
   }
 }
