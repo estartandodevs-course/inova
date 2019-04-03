@@ -9,7 +9,7 @@ import{ LANG } from '../../theme/lang-pt';
 export class SectionContactComponent implements OnInit {
 
   public itemSelected  = {
-    name: "Mensagem Enviada. Obrigado por entrar em contato.",
+    name: "Mensagem Enviada, obrigado por entrar em contato.",
     img: "",
     description: "",
   }
@@ -20,7 +20,7 @@ export class SectionContactComponent implements OnInit {
   public name = ""
 
   ngOnInit() {
-  }
+  }  
 
   send(nome, tel, email, message){
     this.modalComponent.openModal(this.itemSelected);
