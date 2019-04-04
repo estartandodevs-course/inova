@@ -39,10 +39,35 @@ main{
         }
         .group-card-1{
             width: 80vw;
-            flex-wrap: wrap-reverse;
-            p{
-                font-size: 70%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .card{
+                p{
+                    font-size: 70%;
+                }
             }
+        }
+    }
+}
+
+@media screen and(max-width: 487px){
+    .group-card-1{
+        flex-wrap: wrap-reverse !important;
+        .card:nth-child(9){
+            min-width: 100px;
+            width: 100%;
+            img{
+                width: 65px;
+                height: 65px;
+            }
+        }
+    }
+}
+@media screen and(max-width: 324px){
+    .group-card-1{
+        justify-content: center !important;
+        .card:nth-child(9){
+            width: 100px;
         }
     }
 }
