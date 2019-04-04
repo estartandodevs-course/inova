@@ -23,15 +23,17 @@
     $(document).scroll(function () { 
       var posicaoScroll = $(document).scrollTop();
       var alturaScroll = window.innerHeight;
-      console.log(alturaScroll)
-      console.log(posicaoScroll)
-      console.log(posicaoInicial)
-      if( posicaoScroll >100 && alturaScroll < 680){
+      // console.log(alturaScroll)
+      // console.log(posicaoScroll)
+      // console.log(posicaoInicial)
+      if( posicaoScroll >50 && alturaScroll < 680){
        $('.nav-bar').css('background-color', "rgba(0, 0, 0, 0.8)");
-       $('.nav-bar').css('transition', "0.5s"); 
+       $('.nav-bar').css('transition', "0.8s"); 
+       $('.nav-bar').addClass('u')
       }
       else{
         $('.nav-bar').css('background-color', "rgba(0, 0, 0, 0.0)");
+       $('.nav-bar').removeClass('u');
       }
     })
         
