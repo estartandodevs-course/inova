@@ -90,4 +90,11 @@ body::-webkit-scrollbar {
     .style-input{
         width: 80vw !important;
     }
+    .card{
+        width: 100px;
+        height: 130px; 
+        border: none; 
+        margin: 15px;
+        cursor: pointer;
+    }
 }
