@@ -11,10 +11,10 @@ export class ModalComponent implements OnInit {
   constructor(private modalService: ModalService) { }
 
   ngOnInit() {
-    this.modalService.content.subscribe(res=>this.contentModal = res)
+    this.modalService.content.subscribe(res=>this.contentModal = Object.assign(new Modal(), res))
   }
 
-  public contentModal = {}
+  public contentModal = new Modal()
 
   public openModal(content){
     this.modalService.content.next(content)
@@ -33,4 +33,9 @@ export class ModalComponent implements OnInit {
     }
     
   }  
+}
+class Modal {
+  img = "assets/img/menu-icon.png";
+  name = "";
+  description = "";
 }

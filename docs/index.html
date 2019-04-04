@@ -11,7 +11,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-<link rel="stylesheet" href="styles.5f9543ce9928fffa2db8.css"></head>
+<link rel="stylesheet" href="styles.437713c9c85edd862495.css"></head>
 
 <body>
   <app-root></app-root>
@@ -23,19 +23,21 @@
     $(document).scroll(function () { 
       var posicaoScroll = $(document).scrollTop();
       var alturaScroll = window.innerHeight;
-      console.log(alturaScroll)
-      console.log(posicaoScroll)
-      console.log(posicaoInicial)
-      if( posicaoScroll >100 && alturaScroll < 680){
+      // console.log(alturaScroll)
+      // console.log(posicaoScroll)
+      // console.log(posicaoInicial)
+      if( posicaoScroll >50 && alturaScroll < 680){
        $('.nav-bar').css('background-color', "rgba(0, 0, 0, 0.8)");
-       $('.nav-bar').css('transition', "0.5s"); 
+       $('.nav-bar').css('transition', "0.8s"); 
+       $('.nav-bar').addClass('u')
       }
       else{
         $('.nav-bar').css('background-color', "rgba(0, 0, 0, 0.0)");
+       $('.nav-bar').removeClass('u');
       }
     })
         
   </script>
-<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.c5dd28b362270c767b34.js" nomodule></script><script type="text/javascript" src="polyfills.8bbb231b43165d65d357.js"></script><script type="text/javascript" src="main.528f25e050e09c5d3dde.js"></script></body>
+<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.c5dd28b362270c767b34.js" nomodule></script><script type="text/javascript" src="polyfills.8bbb231b43165d65d357.js"></script><script type="text/javascript" src="main.edacae5dc542692de1f2.js"></script></body>
 
 </html>
