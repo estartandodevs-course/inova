@@ -35,14 +35,14 @@ body::-webkit-scrollbar {
 .es-j-center{
     justify-content: center;
 }
-.es-ai-center{
-    align-items: center;
-}
-.es-j.start{
+.es-j-start{
     justify-content: flex-start;
 }
 .es-j-end{
     justify-content: flex-end;
+}
+.es-ai-center{
+    align-items: center;
 }
 .es-ai-end{
     align-items: flex-end;
