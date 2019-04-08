@@ -5,12 +5,14 @@ main{
     padding: 80px;
     font-family: 'Comfortaa', cursive;
     box-shadow:  0px 4px 8px rgba(0, 0, 0, 0.25) inset;
+   div{
     h2{
         color: $fontColor3;
         font-size: 24px;
         text-align: center;
         text-shadow: 0px 4px 4px $shadow-color;
     }
+   }
     .group-card-1{
         flex-wrap: wrap; 
         font-family: $opensans;  
@@ -25,17 +27,19 @@ main{
 @media screen and(max-width: 768px){
     main{
         padding-top: 30px;
-        #h2p{
-            display: none;
-        }
-        #h2s{
-            text-transform: uppercase;
-            color: $fontColor4;
-            font-size: 24px;
-            text-align: initial;
-            width: 85vw;
-            text-shadow: none;
-            margin-bottom: 20px;
+        div{
+            #h2p{
+                display: none;
+            }
+            #h2s{
+                text-transform: uppercase;
+                color: $fontColor4;
+                font-size: 24px;
+                text-align: initial;
+                width: 85vw;
+                text-shadow: none;
+                margin-bottom: 20px;
+            }
         }
         .group-card-1{
             width: 80vw;
@@ -52,10 +56,10 @@ main{
 
 @media screen and(max-width: 487px){
     .group-card-1{
-        flex-wrap: wrap-reverse !important;
-        .card:nth-child(9){
+        .card:nth-child(4){
             min-width: 100px;
             width: 100%;
+            order: -1;
             img{
                 width: 65px;
                 height: 65px;

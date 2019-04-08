@@ -35,14 +35,14 @@ body::-webkit-scrollbar {
 .es-j-center{
     justify-content: center;
 }
-.es-ai-center{
-    align-items: center;
-}
-.es-j.start{
+.es-j-start{
     justify-content: flex-start;
 }
 .es-j-end{
     justify-content: flex-end;
+}
+.es-ai-center{
+    align-items: center;
 }
 .es-ai-end{
     align-items: flex-end;
@@ -71,6 +71,11 @@ body::-webkit-scrollbar {
     font-family: $opensans;
     text-transform: uppercase;
     outline: 0;
+    transition: .6s;
+    &:focus{
+        box-shadow: 0 0px 8px 0 lightblue;
+        transition: .3s;
+    }
 }
 .card{
     background-color: $bgc-6;
