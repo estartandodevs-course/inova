@@ -35,14 +35,14 @@ body::-webkit-scrollbar {
 .es-j-center{
     justify-content: center;
 }
-.es-ai-center{
-    align-items: center;
-}
-.es-j.start{
+.es-j-start{
     justify-content: flex-start;
 }
 .es-j-end{
     justify-content: flex-end;
+}
+.es-ai-center{
+    align-items: center;
 }
 .es-ai-end{
     align-items: flex-end;
@@ -66,12 +66,16 @@ body::-webkit-scrollbar {
     border: 1px solid;
     border-color: white;
     width: 317px;
-    // margin-bottom: 25px;
     padding: 5px;
     color: $fontColor2;
     font-family: $opensans;
     text-transform: uppercase;
     outline: 0;
+    transition: .6s;
+    &:focus{
+        box-shadow: 0 0px 8px 0 lightblue;
+        transition: .3s;
+    }
 }
 .card{
     background-color: $bgc-6;
@@ -90,5 +94,12 @@ body::-webkit-scrollbar {
 @media screen and(max-width: 768px){
     .style-input{
         width: 80vw !important;
+    }
+    .card{
+        width: 100px;
+        height: 130px; 
+        border: none; 
+        margin: 15px;
+        cursor: pointer;
     }
 }

@@ -1,17 +1,43 @@
 <!doctype html>
 <html lang="pt-br">
+
 <head>
+  <meta name="theme-color" content="#710000">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#710000">
+  <meta name="msapplication-navbutton-color" content="#710000">
   <meta charset="utf-8">
-  <title>Inova</title>
+  <title>Innova</title>
   <base href="/inova/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="stylesheet" href="styles.fdfa2a5ead6248f438fb.css"></head>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+<link rel="stylesheet" href="styles.4204d43178127781d9f4.css"></head>
+
 <body>
   <app-root></app-root>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.c5dd28b362270c767b34.js" nomodule></script><script type="text/javascript" src="polyfills.8bbb231b43165d65d357.js"></script><script type="text/javascript" src="main.e24ec25e336e852140f7.js"></script></body>
+  <script>
+    var posicaoInicial = $('body').position().top;
+    $(document).scroll(function () { 
+      var posicaoScroll = $(document).scrollTop();
+      var alturaScroll = window.innerHeight;
+      // console.log(alturaScroll)
+      // console.log(posicaoScroll)
+      // console.log(posicaoInicial)
+      if( posicaoScroll >50 && alturaScroll < 680){
+       $('.nav-bar').css('background-color', "rgba(0, 0, 0, 0.8)");
+       $('.nav-bar').css('transition', "0.8s"); 
+       $('.nav-bar').addClass('u')
+      }
+      else{
+        $('.nav-bar').css('background-color', "rgba(0, 0, 0, 0.0)");
+       $('.nav-bar').removeClass('u');
+      }
+    })
+        
+  </script>
+<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.c5dd28b362270c767b34.js" nomodule></script><script type="text/javascript" src="polyfills.8bbb231b43165d65d357.js"></script><script type="text/javascript" src="main.83db261b7b7a247a1609.js"></script></body>
+
 </html>
