@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EasingLogic } from 'ngx-page-scroll-core';
 import { LANG } from '../../theme/lang-pt';
+import { EasingLogic } from 'ngx-page-scroll-core';
 const sqrt = Math.sqrt,
 pow = Math.pow,
 sin = Math.sin,
@@ -26,6 +27,13 @@ export class FooterComponent implements OnInit {
     return c/2*(t*t*t*t*t + 2) + b;
   }
   public lang = LANG;
+
+  public easeOutElastic: EasingLogic = (t: number, b: number, c: number, d: number): number => {
+    t /= d/2;
+    if (t < 1) return c/2*t*t*t*t*t + b;
+    t -= 2;
+    return c/2*(t*t*t*t*t + 2) + b;
+  }
 
   constructor() { }
 
