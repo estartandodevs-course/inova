@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalComponent} from '../modal/modal.component';
 import{ LANG } from '../../theme/lang-pt';
 @Component({
   selector: 'app-section-contact',
@@ -7,15 +8,21 @@ import{ LANG } from '../../theme/lang-pt';
 })
 export class SectionContactComponent implements OnInit {
 
+  public itemSelected  = {
+    name: "Mensagem Enviada, obrigado por entrar em contato.",
+    img: "",
+    description: "",
+  }
+
+  constructor(private modalComponent: ModalComponent) { 
+  }
   public Lang = LANG
   public name = ""
-  constructor() { }
 
   ngOnInit() {
-  }
+  }  
 
-  send(nome, tel, email){
-    console.log("EVENT SECTION   ---   ", nome, tel, email)
+  send(nome, tel, email, message){
+    this.modalComponent.openModal(this.itemSelected);
   }
-
 }

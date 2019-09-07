@@ -36,11 +36,14 @@ nav {
 }
 @media screen and (max-width: 768px) {
   nav {
+    position: sticky;
+    top: 0;
     div {
       img {
         width: 102px;
         height: 53px;
         margin: 10px 20px;
+        transition: .5s;
       }
     }
     ul {
@@ -112,6 +115,22 @@ nav {
       }
     }
   }
+  .u{
+    div {
+      img {
+        width: 92px;
+        height: 43px;
+        margin: 10px 20px;
+        transition: .5s;
+      }
+    }
+    .img-bnt {
+      img {
+        width: 44px;
+        height: 42px;
+      }
+    }
+  }
 }
 @media screen and (min-width: 769px) {
   .img-bnt {
@@ -121,3 +140,4 @@ nav {
     display: none;
   }
 }
+

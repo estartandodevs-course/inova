@@ -28,10 +28,11 @@
 
   .logo {
     width: 20%;
+    cursor: pointer;
 
     .inova {
-      width: 154px;
-      height: 80px;
+      width: 122px;
+      height: 63px;
     }
   }
 
@@ -63,7 +64,11 @@
 
     .logo {
       width: 125px;
-      height: 63px;
+      height: 62px;
+      .inova{
+        width: 125px;
+        height: 62px;
+      }
       padding: 20px 0 20px 0;
     }
 
